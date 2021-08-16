@@ -410,7 +410,7 @@
     :root{--h:0vh;}
     .active{--h:60vh; }
     .home .nav_logo #btn{display: block; font-size: 3rem; color: #fff; cursor: pointer;}
-    .nav_logo nav{ position: absolute;width: 100%; height: var(--h); background: rgb(255, 255, 255); flex-direction: column;top: 10vh; overflow: hidden;transition: 0.4s; }
+    .nav_logo nav{z-index: 999; position: absolute;width: 100%; height: var(--h); background: rgb(255, 255, 255); flex-direction: column;top: 10vh; overflow: hidden;transition: 0.4s; }
     .nav_logo nav ul {display: flex; justify-content: center;  align-items: center; flex-direction: column;}
     .home .nav_logo nav ul li a{ font-size: 2rem; color: #000000; }
     .nav_logo li{transform: translateX(0%);}
