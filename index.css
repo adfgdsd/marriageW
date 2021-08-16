@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Arimo', sans-serif;
+
+}
+
+.home .nav_logo,
+.home .min_home,
+.home .home_text,
+.home .home_text h4,
+.story,
+.time,
+.time .text ,
+.time .time_sec .time_mi,
+.time .time_sec .time_min,
+.time .time_sec .time_min .time_bor,
+.info,
+.info .info_sec,
+.info .info_sec .one ,
+.info .info_sec .one .one_ch,
+.two .two_sec,
+.two .two_sec .one_ch,
+.info,
+.info .info_sec,
+.info .info_min,
+.img .min_img .img,
+.img .min_img .img .img_sec,
+.location,
+.location .min_location,
+.location .min_location .location_min,
+.location .min_location .from,
+.cc,
+.img .min_img .img .img_sec span,
+.up
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home
+{
+    width: 100%;
+    height: 100vh;
+    background: url('https://preview.colorlib.com/theme/wedding2/images/slider-1-1600x900.jpg.webp') no-repeat;
+}
+.home .min_home
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.315);
+}
+.home .nav_logo
+{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-around;
+    border-bottom: 1px solid #fff;
+    /* background-color: red; */
+}
+.home .nav_logo i
+{
+    display: none;
+}
+.home .nav_logo .logo
+{
+    font-family: 'MonteCarlo', cursive;
+    font-size: 2rem;
+    color: #fff;
+}
+.home .nav_logo nav ul
+{
+    display: flex;
+}
+.home .nav_logo nav ul li
+{
+    list-style: none;
+    margin: 20px;
+}
+.home .nav_logo nav ul li a
+{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #fff;
+    font-family: 'Arimo', sans-serif;
+}
+.home .nav_logo nav ul li a:hover
+{
+    color:rgb(255, 0, 140);
+}
+.home .home_text
+{
+    width: 50%;
+    height: 50%;
+    flex-direction: column;
+    color: #fff;
+    /* background-color: red; */
+}
+.home .home_text h1
+{
+    font-size: 5rem;
+}
+.home .home_text h2
+{
+    font-size: 1.5rem;
+}
+.home .home_text h3
+{
+    font-size: 3rem;
+    font-family: 'MonteCarlo', cursive;
+}
+.home .home_text h4
+{
+    font-size: 5.5rem;
+    font-family: 'Arimo', sans-serif;
+}
+.home .home_text h4 i
+{
+    color: rgb(255, 0, 140);
+}
+
+/* story section  */
+
+.story
+{
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    background: url('https://preview.colorlib.com/theme/wedding2/images/Background_Circle.png.webp');
+    flex-direction: column;
+}
+.story h1
+{
+    font-size: 5rem;
+    font-family: 'MonteCarlo', cursive;
+    position: relative;
+    margin-bottom: 25px;
+}
+.story h1::after
+{
+    bottom: 0%;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    left: 0%;
+    background: black;
+}
+.story h1::before
+{
+    bottom: -5%;
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 45%;
+    transform: rotate(45deg);
+    background: black;
+}
+.story p
+{
+    font-size: 1.4rem;
+    color: #555;
+}
+
+/* time section  */
+
+.time
+{
+    width: 100%;
+    height: 70vh;
+    justify-content: space-around;
+    flex-direction: column;
+    background: url('https://preview.colorlib.com/theme/wedding2/images/counter-1-1600x600.jpg.webp') no-repeat center;
+}
+.time .text 
+{
+    width: 50%;
+    height: 10vh;
+    color: #fff;
+    /* background: red; */
+}
+.time .text h1
+{
+    font-size: 3.5rem;
+    font-family: 'MonteCarlo', cursive;
+}
+.time .time_sec 
+{
+    width: 70%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* background: red; */
+}
+.time .time_sec .time_min
+{
+    width: 100%;
+    height: 100%;
+    /* background: rgb(255, 0, 140); */
+}
+.time .time_sec .time_min .time_bor
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    flex-direction: column;
+    border: 2px solid #fff;
+    color: #fff;
+    /* background: rgb(255, 255, 255); */
+}
+.time .time_sec .time_min .time_bor h1
+{
+    font-size: 5rem;
+}
+.info
+{
+    margin-top: 5%;
+    width: 100%;
+    height: 100vh;
+    background: url('https://domf5oio6qrcr.cloudfront.net/medialibrary/9030/iStock_72610687_MEDIUM.jpg') no-repeat center;
+}
+.info .info_min
+{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.301);
+}
+.info .info_min .info_sec
+{
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+}
+.info .info_min .info_sec h1
+{
+    font-size: 4rem;
+    font-family: 'MonteCarlo', cursive;
+    color: #fff;
+    margin-bottom: 20px;
+    position: relative;
+}
+.info .info_min .info_sec h1::after
+{
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+}
+.info .info_min .info_sec h1::before
+{
+    bottom: -7%;
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 45%;
+    transform: rotate(45deg);
+    background: rgb(255, 255, 255);
+}
+.info .info_min .info_sec h3
+{
+    color: #fff;
+}
+.info .info_min .info_sec a
+{
+    color: #fff;
+}
+
+.img
+{
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* background: red; */
+}
+.img .title
+{
+    top: 0%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3.5rem;
+    font-family: 'MonteCarlo', cursive;
+}
+.img .min_img
+{
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    /* background: rgb(255, 0, 140); */
+}
+.img .min_img .img
+{
+    width: 100%;
+    height: 100%;
+}
+.img .min_img .img .img_sec
+{
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    /* background: chartreuse; */
+}
+.img .min_img .img .img_sec img
+{
+    width: 100%;
+    transition: 0.3s;
+}
+.img .min_img .img .img_sec img:hover
+{
+    transform: scale(1.1);
+}
+.location
+{
+    width: 100%;
+    height: 100vh;
+    background: url('https://preview.colorlib.com/theme/wedding2/images/Background_Circle.png.webp') no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.location .title
+{
+    position: absolute;
+    top: 0%;
+    font-size: 4rem;
+    font-family: 'MonteCarlo', cursive;
+}
+.location .min_location
+{
+    width: 90%;
+    height: 80%;
+    /* background: red; */
+}
+.location .min_location .location_min
+{
+    width: 50%;
+    height: 100%;
+    /* background: rgba(255, 0, 140, 0.219); */
+}
+.location .min_location .from
+{
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    /* background: rgb(255, 185, 224); */
+}
+.location .min_location .from input
+{
+    width: 90%;
+    height: 50px;
+    outline: none;
+    border: 2px solid black;
+    margin: 10px;
+}
+.location .min_location .from input:nth-child(3)
+{
+    height: 210px;
+}
+.location .min_location .from input:nth-child(4)
+{
+    font-size: 2rem;
+    background: none;
+    border: 2px solid rgb(0, 0, 0);
+}
+.location .min_location .from input:nth-child(4):hover
+{
+    background: rgb(230, 230, 230); 
+    color: rgb(0, 0, 0);
+}
+.cc
+{
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+}
+.up
+{
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    width: 40px;
+    height: 40px;
+    /* background: red; */
+}
+.up i
+{
+    font-size: 3rem;
+    color: rgba(255, 0, 140, 0.479);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:991px){
+    :root{--h:0vh;}
+    .active{--h:60vh; }
+    .home .nav_logo #btn{display: block; font-size: 3rem; color: #fff; cursor: pointer;}
+    .nav_logo nav{ position: absolute;width: 100%; height: var(--h); background: rgb(255, 255, 255); flex-direction: column;top: 10vh; overflow: hidden;transition: 0.4s; }
+    .nav_logo nav ul {display: flex; justify-content: center;  align-items: center; flex-direction: column;}
+    .home .nav_logo nav ul li a{ font-size: 2rem; color: #000000; }
+    .nav_logo li{transform: translateX(0%);}
+    .time .time_sec{width: 70%;}
+    .img{height: 150vh;}
+    .time .time_sec{grid-template-columns: repeat(2,1fr); grid-gap: 10px;}
+    .img .min_img{    grid-template-columns: repeat(2,1fr);   grid-template-rows: repeat(3,1fr);}
+
+    .location .min_location{flex-direction: column;}
+    .location{height: 130vh;}
+    .location .min_location .from{width: 100%;}
+    .location .min_location .location_min{width: 90%;}
+}
+
+@media screen and (max-width:780px){
+    .info .info_sec .one .one_ch,
+    .two .two_sec .one_ch{width: 80%;}
+    .img{    height: 380vh;}
+    .img .min_img { height: 90%; grid-gap: 20px; grid-template-columns: repeat(1,1fr);   grid-template-rows: repeat(6,1fr);   }
+
+}
+@media screen and (max-width:600px){
+    html{font-size: 65%;}
+    .home .home_text{width: 100%;}
+    .time .time_sec{width: 100%;}
+    .time .time_sec .time_min .time_bor{width: 160px; height: 160px;}
+    .info .info_sec .style{display: none;}
+    .info .info_sec{flex-direction: column;}
+    .two .two_sec{ height: 40vh;}
+    .info .info_sec .one{width: 100%;}
+    .info .info_min .info_sec h3{font-size: 1.4rem;}
+    .info .info_min .info_sec{width: 95%;}
+    .img {  height: 320vh; }
+
+}
+
+@media screen and (max-width:380px){
+    .img { height: 220vh; }
+}
